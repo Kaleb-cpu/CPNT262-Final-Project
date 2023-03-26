@@ -1,4 +1,5 @@
 const player1 = {
+	id:'messi',
 	name: 'MESSI',
 	age: 35,
 	country: 'Argentina',
@@ -13,6 +14,7 @@ const player1 = {
 };
 
 const player2 = {
+	id: 'neymar',
 	name: 'NEYMAR',
 	age: 31,
 	country: 'Brazil',
@@ -29,7 +31,7 @@ const player2 = {
 const player3 = {
 	name: 'MBAPPE',
 	age: 24,
-	country: 'French',
+	country: 'France',
 	team: 'PSG F.C',
 	position: 'Forward',
 	height: "5'10",

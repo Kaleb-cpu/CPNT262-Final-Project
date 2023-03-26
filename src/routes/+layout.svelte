@@ -1,18 +1,16 @@
 <script>
   import './main.css'
+	import Nav from '$lib/components/Nav.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  
 </script>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="./gallery">Gallery</a>
-  <a href="./about">About</a>
-  <a href="./contact">Contact</a>
-</nav>
+<Nav />
 
 <slot />
 
-<footer>
-  <p>TERMS OF USE</p>
-  <p>PRIVACY AND POLICY</p>
-  <p>&copy; Kaleb Berhane. All rights reserved</p>
-</footer>
+<Footer />
+
+
+
+

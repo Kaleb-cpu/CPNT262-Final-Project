@@ -1,5 +1,6 @@
 <script>
 	import { players } from '../players.js';
+	// export let player;
 </script>
 
 <main>
