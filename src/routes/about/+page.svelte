@@ -11,5 +11,6 @@
 <style>
   main{
     flex: auto;
+    background-color: #377888;
   }
 </style>

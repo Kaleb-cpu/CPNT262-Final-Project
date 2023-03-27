@@ -7,7 +7,7 @@ const player1 = {
 	position: 'Forward',
 	height: "5'7",
 	goals: '672',
-	image: './images/messi-thumbnail.jpg',
+	image: './images/messi-thumbnail.jpeg',
 	description:
 		'Lionel Andrés Messi born 24 June 1987 is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team.',
 	link: 'https://en.psg.fr/teams/first-team/squad/lionel-messi'
@@ -29,6 +29,7 @@ const player2 = {
 };
 
 const player3 = {
+	id:'mbappe',
 	name: 'MBAPPE',
 	age: 24,
 	country: 'France',
@@ -43,6 +44,7 @@ const player3 = {
 };
 
 const player4 = {
+	id:'ronaldo',
 	name: 'RONALDO',
 	age: 38,
 	country: 'Portuguese',
@@ -57,6 +59,7 @@ const player4 = {
 };
 
 const player5 = {
+	id:'harry',
 	name: 'HARRY',
 	age: 29,
 	country: 'British',
@@ -71,6 +74,7 @@ const player5 = {
 };
 
 const player6 = {
+	id:'modric',
 	name: 'MODRIC',
 	age: 37,
 	country: 'Croatian',
@@ -85,6 +89,7 @@ const player6 = {
 };
 
 const player7 = {
+	id:'marcelo',
 	name: 'MARCELO',
 	age: 34,
 	country: 'Brazil',
@@ -99,6 +104,7 @@ const player7 = {
 };
 
 const player8 = {
+	id:'ronaldhino',
 	name: 'RONALDHINO',
 	age: 43,
 	country: 'Brazil',
@@ -113,6 +119,7 @@ const player8 = {
 };
 
 const player9 = {
+	id:'mane',
 	name: 'MANE',
 	age: 30,
 	country: 'Senegalese',

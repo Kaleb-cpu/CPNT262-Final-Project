@@ -1,13 +1,9 @@
 <script>
-	import { players } from '../players.js';
-	// export let player;
+	export let player;
 </script>
 
 <main>
 	<div class="gallery">
-
-	{#each players as player}
-		<a href={player.link}>
 			<div class="player-card">
 				<div class="player-name">
 					<img src={player.image} width="350" height="200" alt="messi's" />
@@ -27,8 +23,6 @@
 					<p>{player.description}</p>
 				</div>
 			</div>
-		</a>
-	{/each}
 </div>
 </main>
 

@@ -1,6 +1,6 @@
 <script>
-	import Players from "$lib/components/Players.svelte";
-  import { players } from '$lib/players.js'
+	import PlayerCard from "$lib/components/PlayerCard.svelte";
+  import { players } from '$lib/components/players.js'
 </script>
 
 <svelte:head>
@@ -13,9 +13,13 @@
     <h1>The Worlds Greatest Soccer Players</h1>
     <h2>Click on each card to see each player in more detail</h2>
   </section>
-  
-
-        <Players />
+  <div class="player-card">
+        {#each players as player}
+      <a href="/gallery/{player.id}">
+        <PlayerCard {player} />
+      </a>
+    {/each}
+  </div>
 </main>
 
 
@@ -28,5 +32,6 @@
   }
   main{
     flex: auto;
+    background-color: #377888;
   }
 </style>

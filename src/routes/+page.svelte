@@ -4,10 +4,17 @@
 </svelte:head>
 
 <main>
-  Hello
+  <div class=hero-section>
+    <!-- <img src="./images/stadium.jpg" alt=""> -->
+  </div>
 </main>
   <style>
-  main{
+    .hero-section{
+      object-fit: cover;
+      width: max-content;
+    }
+    main{
+    background-image:url(./images/stadium.jpg);
     flex: auto;
   }
 
