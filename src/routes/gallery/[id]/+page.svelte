@@ -17,7 +17,6 @@
 </script>
 
 <main>
-  <h1>Player Details</h1>
 <section>
   {#if getPlayer}
         <a href="{getPlayer.link}" target="_blank">
@@ -28,3 +27,9 @@
     {/if}
 </section>
 </main> 
+
+<style>
+  main{
+    flex: auto;
+  }
+</style>

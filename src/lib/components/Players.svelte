@@ -21,7 +21,7 @@
 				</div>
 
 				<div class="player-description">
-					<p>{player.description}</p>
+					<p>{player.shortDescription}</p>
 				</div>
 			</div>
 			</div>
@@ -50,12 +50,11 @@ main{
 	}
 
 	.player-information{
-		height: 100vh;
+		height: 70vh;
 	}
 	.player-card {
 		border: 5px solid rgb(4, 37, 50);
 		width: min-content;
-		height: max-content;
 		margin: auto;
 		padding: 0.5em;
 		border-radius: 5px;

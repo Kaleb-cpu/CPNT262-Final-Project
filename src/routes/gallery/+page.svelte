@@ -1,12 +1,12 @@
+<svelte:head>
+  <title>Gallery</title>
+  <meta name="robots" content="noindex nofollow" />
+</svelte:head>
 <script>
   import { players } from '$lib/components/players.js';
 	import Players from '$lib/components/Players.svelte';
 </script>
 
-<svelte:head>
-	<title>Gallery</title>
-	<meta name="robots" content="noindex nofollow" />
-</svelte:head>
 
 <main>
   <section class="title">

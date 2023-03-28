@@ -3,14 +3,10 @@
 </script>
 
 <main>
-	<div class="gallery">
+	<h1>{player.name}</h1>
+	<div class="player">
 			<div class="player-card">
-				<div class="player-information">
-				<div class="player-name">
-					<img src="{player.imageFullshot}" width="350" height="200" alt="{player.id}'s picture">
-					<h2>{player.name}</h2>
-				</div>
-
+				<img src="{player.imageFullshot}" width="350" height="200" alt="{player.id}'s picture">
 				<div class="player-identity">
 					<p><span style="font-weight: bold;">Age:</span> {player.age}</p>
 					<p><span style="font-weight: bold;">Height:</span> {player.height}</p>
@@ -19,43 +15,41 @@
 					<p><span style="font-weight: bold;">Position:</span> {player.position}</p>
 					<p><span style="font-weight: bold;">Goals:</span> {player.goals}</p>
 				</div>
-
-				<div class="player-description">
-					<p>{player.description}</p>
-				</div>
-			</div>
-			</div>
-			</div>
+			</div>	
+		
+	<div class="player-description">
+		<h1>Who is {player.name}?</h1>
+		<p>{player.longDescription}</p>
+	</div>
+</div>
 </main>
 
 <style>
-
-main{
-	flex: auto;
+h1{
+	font-size: clamp(1rem, 10vw, 3rem);
+	text-align: center;
+	color: #292c34;
+	margin-bottom: 2em;
 }
-	.gallery{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		display: block;
-		margin-bottom: 1em;
 
+	.player{
+		margin-bottom: 3em;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
 	}
 	img{
 		object-fit:cover;
 		width: 100%;
 		height: initial;
-		margin: auto;
 		display: block;
+		border-radius: 15px;
 	}
-
-	.player-information{
-		height: 100vh;
-	}
+	
+	
+	
 	.player-card {
-		border: 5px solid rgb(4, 37, 50);
-		width: min-content;
-		height: max-content;
 		margin: auto;
+		width: clamp(10rem, 40vw, 40rem);
 		padding: 0.5em;
 		border-radius: 5px;
 		-webkit-transition: background-color 2s ease- out;
@@ -68,35 +62,27 @@ main{
 	.player-card:hover {
 		background-color: rgb(127, 115, 99);
 		cursor: pointer;
+		border-radius: 15px;
 	}
-	.player-card h2 {
-		text-align: center;
-	}
-
-	.player-name {
-		color: rgb(29, 29, 32);
-		font-size: 1.4em;
-		text-align: center;
-	}
-
+	
 	.player-identity {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin: 0;
-		text-align: center;
-		font-size: 1rem;
+		font-size: clamp(0.5rem, 2.5vw, 1.9rem); 
+		padding-top: 1em;
 	}
 
 	.player-identity p {
-		color: rgb(24, 25, 23);
-		margin: 0.4em;
+		color: rgb(59, 52, 43);
 	}
 
 	.player-description {
-		width: 30ch;
-		font-size: 1.1em;
+	
+		width: 50ch;
+		font-size: clamp(0.5rem, 2.5vw, 1.5rem);
 		color: rgb(40, 40, 40);
-		padding: 0.3em;
+	}
+
+	.player-description h1{
+		width: max-content;
 	}
 </style>
 
