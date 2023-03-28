@@ -16,7 +16,6 @@ const config = {
 mdsvex({
 	// tell svelte to handle mdsvex files
 	extensions: ['.md'],
-	preprocess: mdsvex()
 });
 
 export default config;
