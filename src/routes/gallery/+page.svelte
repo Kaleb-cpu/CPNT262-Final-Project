@@ -1,6 +1,6 @@
 <script>
-	import PlayerCard from "$lib/components/PlayerCard.svelte";
   import { players } from '$lib/components/players.js';
+	import PlayerCard from "$lib/components/PlayerCard.svelte";
 </script>
 
 <svelte:head>
@@ -15,9 +15,9 @@
   </section>
   <div class="player-card">
         {#each players as player}
-      <a href="/gallery/{player.id}">
-        <PlayerCard {player} />
-      </a>
+        <a href="/gallery/{player.id}">
+          <PlayerCard {player} />
+        </a>
     {/each}
   </div>
 </main>
@@ -25,13 +25,25 @@
 
 <style>
 
+  .player-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5em;
+  }
+  
   .title{
-    color: lightcyan;
-    margin-left: 0.5em;
-
+    text-align: center;
   }
   main{
     flex: auto;
-    background-color: #377888;
+    background-color: rgb(250, 235, 215);
+  }
+
+  .title{
+    color: rgb(81, 95, 95);
+    margin-left: 0.5em;
+    font-size: clamp(1rem, 10vw, 2rem); 
+    margin-bottom: 1em;
+
   }
 </style>

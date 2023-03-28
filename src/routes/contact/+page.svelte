@@ -3,10 +3,10 @@
 	<meta name="robots" content="noindex nofollow" />
 </svelte:head>
 <main>
-	<h1>Contact US</h1>
+	<h1 class="text-6xl font-bold leading-normal mt-0 mb-2 text-slate-600">Contact US</h1>
 	<div class="contact">
-		<h3>Online Customer Service</h3>
-		<p>Drop us a line through the form below, and we will get back to you ASAP</p>
+		<h3 class="text-4xl font-semibold leading-normal mt-0 mb-2 text-slate-600">Online Customer Service</h3>
+		<p class="text-2xl font-normal leading-normal mt-0 mb-2 text-slate-600">Drop us a line through the form below, and we will get back to you ASAP</p>
 		<form action="https://formspree.io/f/xqkodero" method="POST">
 			<label for="fullname">Full Name</label>
 			<input type="name" name="name" />
@@ -26,10 +26,11 @@
 	/* main class element */
 	.contact {
 		height: 100vh;
+		margin-top: 2em;
 	}
 	/* main */
 	main {
-		background: #90b8f8;
+		background: rgb(250, 235, 215);
 		flex: auto;
 	}
 	/* texts */
@@ -37,7 +38,6 @@
 	h3,
 	p {
 		text-align: center;
-		color: #26282b;
 	}
 	/* contact form */
 	form {
@@ -47,6 +47,8 @@
 		padding: 20px;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 		margin-left: 2em;
+		margin: auto;
+		margin-top: 2em;
 		font-size: clamp(1.5rem, 2vw, 4rem);
 	}
 	/* form label class */
@@ -78,10 +80,11 @@
 		height: 50px;
 		width: 100%;
 		font-size: clamp(1.5rem, 2vw, 4rem);
-		background-color: rgb(17, 59, 71);
+		background-color: rgb(250, 235, 215);
 		border: none;
 		border-radius: 5px;
-		color: hsl(170, 30%, 80%);
+		color: #353941;
+		font-weight: bold;
 		transition: transform 0.5s;
 		margin-top: 0.6em;
 	}

@@ -5,6 +5,7 @@
 <main>
 	<div class="gallery">
 			<div class="player-card">
+				<div class="player-information">
 				<div class="player-name">
 					<img src={player.image} width="350" height="200" alt="messi's" />
 					<h2>{player.name}</h2>
@@ -23,27 +24,40 @@
 					<p>{player.description}</p>
 				</div>
 			</div>
-</div>
+			</div>
+			</div>
+
 </main>
 
 <style>
+
+main{
+	flex: auto;
+}
 	.gallery{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		display: block;
+		margin-bottom: 1em;
+
+	}
+	img{
+		object-fit:cover;
+		width: 100%;
+		height: initial;
+		margin: auto;
+		display: block;
 	}
 
-	img{
-		object-fit:fill;
-		width: 180px;
-		height: 200px;
-	}
-	a {
-		text-decoration: none;
+	.player-information{
+		height: 100vh;
 	}
 	.player-card {
 		border: 5px solid rgb(4, 37, 50);
 		width: min-content;
+		height: max-content;
 		margin: auto;
+		padding: 0.5em;
 		border-radius: 5px;
 		-webkit-transition: background-color 2s ease- out;
 		-moz-transition: background-color 2s ease-out;
@@ -51,17 +65,17 @@
 		transition: background-color 2s ease-out;
 	}
 
+	
 	.player-card:hover {
 		background-color: rgb(127, 115, 99);
 		cursor: pointer;
 	}
 	.player-card h2 {
 		text-align: center;
-		margin: 0%;
 	}
 
 	.player-name {
-		color: rgb(209, 208, 246);
+		color: rgb(29, 29, 32);
 		font-size: 1.4em;
 		text-align: center;
 	}
@@ -75,7 +89,7 @@
 	}
 
 	.player-identity p {
-		color: rgb(177, 192, 167);
+		color: rgb(24, 25, 23);
 		margin: 0.4em;
 	}
 

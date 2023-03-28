@@ -1,5 +1,5 @@
 const player1 = {
-	id:'messi',
+	id: 'messi',
 	name: 'MESSI',
 	age: 35,
 	country: 'Argentina',
