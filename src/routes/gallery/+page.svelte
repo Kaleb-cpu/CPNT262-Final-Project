@@ -1,6 +1,6 @@
 <script>
 	import PlayerCard from "$lib/components/PlayerCard.svelte";
-  import { players } from '$lib/components/players.js'
+  import { players } from '$lib/components/players.js';
 </script>
 
 <svelte:head>

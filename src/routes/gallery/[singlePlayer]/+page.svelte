@@ -3,27 +3,28 @@
   import { players } from '$lib/components/players.js';
   import PlayerCard from '$lib/components/PlayerCard.svelte';
 
-  players.find()
+    let getPlayer;
   
- const  getPlayer = function(item) {
-    if (item.id === $page.params.item) {
-      // array.find() returns the current item and stops the loop
-      return true;
-    } else {
-      // array.find() moves on to the next item in the array
-      return false;
+  for (let player of players) {
+    if (player.id === $page.params.id) {
+      getPlayer = player;
+      break;
     }
+    // else: do nothing and move on to the next player
   }
-  
+
 </script>
 
-<div class="card">
+<main>
+  <h1>Player Details</h1>
+<section>
   {#if getPlayer}
-    <a href="{getPlayer.link}" target="_blank">
+    <!-- <a href="{getPlayer.link}" target="_blank">
       <PlayerCard player={getPlayer} />
-    </a>
+    </a> -->
+    <h1>found player</h1>
     {:else}
     <h3>Player not found</h3>
     {/if}
-</div>
- 
+</section>
+</main> 
