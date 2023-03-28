@@ -19,9 +19,9 @@
   <h1>Player Details</h1>
 <section>
   {#if getPlayer}
-    <!-- <a href="{getPlayer.link}" target="_blank">
+    <a href="{getPlayer.link}" target="_blank">
       <PlayerCard player={getPlayer} />
-    </a> -->
+    </a>
     <h1>found player</h1>
     {:else}
     <h3>Player not found</h3>
