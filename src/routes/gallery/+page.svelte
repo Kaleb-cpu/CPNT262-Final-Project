@@ -1,6 +1,6 @@
 <script>
   import { players } from '$lib/components/players.js';
-	import PlayerCard from "$lib/components/PlayerCard.svelte";
+	import Players from '$lib/components/Players.svelte';
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
   <div class="player-card">
         {#each players as player}
         <a href="/gallery/{player.id}">
-          <PlayerCard {player} />
+          <Players {player} />
         </a>
     {/each}
   </div>

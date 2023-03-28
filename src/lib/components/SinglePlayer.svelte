@@ -1,5 +1,5 @@
 <script>
-	export let player;
+  export let player;
 </script>
 
 <main>
@@ -7,7 +7,7 @@
 			<div class="player-card">
 				<div class="player-information">
 				<div class="player-name">
-					<img src={player.image} width="350" height="200" alt="messi's" />
+					<img src="{player.imageFullshot}" width="350" height="200" alt="{player.id}'s picture">
 					<h2>{player.name}</h2>
 				</div>
 
@@ -26,7 +26,6 @@
 			</div>
 			</div>
 			</div>
-
 </main>
 
 <style>
@@ -100,3 +99,4 @@ main{
 		padding: 0.3em;
 	}
 </style>
+

@@ -1,3 +1,7 @@
+<script>
+	import { compile } from 'mdsvex';
+</script>
+
 <svelte:head>
 	<title>Home</title>
 	<meta name="robots" content="noindex nofollow" />
@@ -40,7 +44,7 @@
     display: block;
   }
   h1{
-    margin-bottom: 1em;
+    height: 10vh;
   }
   
 </style>

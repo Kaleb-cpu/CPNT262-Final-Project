@@ -1,9 +1,9 @@
 <script>
   import { page } from '$app/stores';
   import { players } from '$lib/components/players.js';
-  import PlayerCard from '$lib/components/PlayerCard.svelte';
+  import SinglePlayer from '$lib/components/SinglePlayer.svelte';
 
-  let getPlayer = 'h';
+  let getPlayer;
   
   for (let player of players) {
     if (player.id === $page.params.id) {
@@ -18,12 +18,11 @@
 
 <main>
   <h1>Player Details</h1>
-
- 
 <section>
   {#if getPlayer}
-    <h1>found</h1>
-
+        <a href="{getPlayer.link}" target="_blank">
+      <SinglePlayer player={getPlayer} />
+    </a>
     {:else}
     <h3>Player not found</h3>
     {/if}
