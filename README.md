@@ -1,7 +1,7 @@
 # Course title: CPNT 262 - Web Client and Server Programming
 ## Project: Final Project - Multi-page Website with Gallery;
   ### Author name: Kaleb Berhane;
-  - [Repo Link](https://github.com/Kaleb-cpu/CPNT262-Final-Project);
+  - [Repo Link](https://github.com/Kaleb-cpu/CPNT262-Final-Project)
   - [live Site](https://cpnt-262-final-project.vercel.app/)
   ### Attributions: 
    * [Tony's Class-Refractor Example](https://github.com/sait-wbdv/w23-refactor-example)
