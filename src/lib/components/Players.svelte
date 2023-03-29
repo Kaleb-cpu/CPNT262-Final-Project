@@ -39,7 +39,6 @@ main{
 		grid-template-columns: repeat(3, 1fr);
 		display: block;
 		margin-bottom: 1em;
-
 	}
 	img{
 		object-fit:cover;
@@ -50,11 +49,12 @@ main{
 	}
 
 	.player-information{
-		height: 70vh;
+		height: 100vh;
 	}
 	.player-card {
 		border: 5px solid rgb(4, 37, 50);
 		width: min-content;
+		
 		margin: auto;
 		padding: 0.5em;
 		border-radius: 5px;

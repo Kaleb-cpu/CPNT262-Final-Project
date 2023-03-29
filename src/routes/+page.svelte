@@ -1,14 +1,13 @@
-<script>
-	import { compile } from 'mdsvex';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 	<meta name="robots" content="noindex nofollow" />
 </svelte:head>
 
-<main>
+<script>
+	import Button from '@smui/button'
+</script>
 
+<main>
   <section class="heroSection">
 	<div class="flex flex-col justify-center relative overflow-hidden sm:py-12 "> 
   <div class="max-w-7xl mx-auto cursor-pointer"> 

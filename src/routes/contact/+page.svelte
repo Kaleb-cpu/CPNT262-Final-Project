@@ -1,3 +1,9 @@
+		<script lang="ts">
+			import FormField from '@smui/form-field';
+			import Switch from '@smui/switch';
+		
+			let agreed = false;
+		</script>
 <svelte:head>
 	<title>Contact</title>
 	<meta name="robots" content="noindex nofollow" />
@@ -17,9 +23,26 @@
 			<label for="message">Message</label>
 			<input type="text" name="message" />
 
+				<div class="agreeTerms">
+	<FormField>
+  <Switch bind:checked={agreed} />
+  <span slot="label">
+    I agree to the terms and conditions of the software, <small
+      style="opacity: .4;"
+      >and hereby sign away my rights just to use this app.</small
+    >
+  </span>
+</FormField>
+
+<pre class="status">Agreed: {agreed ? 'Yes, muahahah.' : 'Not yet.'}</pre>
+
+
+	</div>
 			<button type="submit">Send</button>
 		</form>
 	</div>
+
+
 </main>
 
 <style>
@@ -86,7 +109,7 @@
 		color: #353941;
 		font-weight: bold;
 		transition: transform 0.5s;
-		margin-top: 0.6em;
+		margin-top: 1em;
 	}
 	/* button hover */
 	button:hover {

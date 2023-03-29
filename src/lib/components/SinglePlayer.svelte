@@ -3,7 +3,6 @@
 </script>
 
 <main>
-	<h1>{player.name}</h1>
 	<div class="player">
 			<div class="player-card">
 				<img src="{player.imageFullshot}" width="350" height="200" alt="{player.id}'s picture">
@@ -18,7 +17,7 @@
 			</div>	
 		
 	<div class="player-description">
-		<h1>Who is {player.name}?</h1>
+		<h2>Who is {player.name}?</h2>
 		<p>{player.longDescription}</p>
 	</div>
 </div>
@@ -30,6 +29,13 @@ h1{
 	text-align: center;
 	color: #292c34;
 	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+h2{
+	font-size: clamp(1rem, 10vw, 2rem);
+	margin-bottom: 0.5em;
+	font-weight: bold;
 }
 
 	.player{
@@ -49,7 +55,7 @@ h1{
 	
 	.player-card {
 		margin: auto;
-		width: clamp(10rem, 40vw, 40rem);
+		width: clamp(10rem, 40vw, 40rem); ;
 		padding: 0.5em;
 		border-radius: 5px;
 		-webkit-transition: background-color 2s ease- out;
