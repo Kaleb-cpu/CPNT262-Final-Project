@@ -1,11 +1,11 @@
-<script>
-	import Button from '@smui/button';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 	<meta name="robots" content="noindex nofollow" />
 </svelte:head>
+<script>
+	import Button from '@smui/button';
+</script>
+
 
 <main>
 	<section class="heroSection">

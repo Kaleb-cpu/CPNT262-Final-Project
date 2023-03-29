@@ -1,3 +1,7 @@
+	<svelte:head>
+		<title>Contact</title>
+		<meta name="robots" content="noindex nofollow" />
+	</svelte:head>
 <script lang="ts">
 	import FormField from '@smui/form-field';
 	import Switch from '@smui/switch';
@@ -5,10 +9,6 @@
 	let agreed = false;
 </script>
 
-<svelte:head>
-	<title>Contact</title>
-	<meta name="robots" content="noindex nofollow" />
-</svelte:head>
 <main>
 	<h1 class="text-6xl font-bold leading-normal mt-0 mb-2 text-slate-600">Contact US</h1>
 	<div class="contact">
