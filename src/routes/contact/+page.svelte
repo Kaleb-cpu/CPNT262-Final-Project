@@ -21,8 +21,10 @@
 			<input type="email" name="email" />
 
 			<label for="message">Message</label>
-			<input type="text" name="message" />
+			<input type="text" name="message"/>
 
+			<span class="termsInput"><input type="checkbox" name="terms" bind:checked={agreed}/></span>
+			
 				<div class="agreeTerms">
 	<FormField>
   <Switch bind:checked={agreed} />
@@ -34,7 +36,7 @@
   </span>
 </FormField>
 
-<pre class="status">Agreed: {agreed ? 'Yes, muahahah.' : 'Not yet.'}</pre>
+<pre class="status">Agreed: {agreed ? 'Yes!' : 'Not yet.'}</pre>
 
 
 	</div>
@@ -46,6 +48,11 @@
 </main>
 
 <style>
+
+	.termsInput{
+		display: none;
+	}
+
 	/* main class element */
 	.contact {
 		height: 100vh;
@@ -85,17 +92,23 @@
 		padding-bottom: 0.5em;
 		padding-top: 0.3em;
 	}
+	
+	.agreeTerms{
+		margin-top: 1.3em;
+	}
 	/* where people would write */
 	input {
 		width: max-content;
-		border: 3px solid #292c34;
+		border: 3px solid #16191f;
 		border-radius: 5px;
 		padding: 0.2em;
+		color: rgb(47, 44, 44);
 		font-size: clamp(1rem, 1.5vw, 2rem);
 	}
+
 	input[type='text']:focus,
 	input[type='email']:focus {
-		border: 3px solid white;
+		border: 3px solid rgb(134, 83, 83);
 	}
 	/* submit button */
 	button {
