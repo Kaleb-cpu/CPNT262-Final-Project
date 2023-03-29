@@ -48,6 +48,16 @@
 		display: block;
 	}
 	h1 {
-		height: 10vh;
+		font-size: clamp(3rem, 6vw, 15rem); 
+	}
+
+	@media only screen and (max-width: 60em){
+		.heroSection{
+			margin: auto;
+			max-width: fit-content;
+		}
+		h1{
+			height: 70vh;
+		}
 	}
 </style>

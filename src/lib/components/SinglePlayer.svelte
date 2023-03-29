@@ -76,7 +76,4 @@
 		color: rgb(40, 40, 40);
 	}
 
-	.player-description h1 {
-		width: max-content;
-	}
 </style>

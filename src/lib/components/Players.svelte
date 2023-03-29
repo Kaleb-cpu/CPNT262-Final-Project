@@ -32,12 +32,7 @@
 	main {
 		flex: auto;
 	}
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		display: block;
-		margin-bottom: 1em;
-	}
+
 	img {
 		object-fit: cover;
 		width: 100%;
@@ -95,4 +90,6 @@
 		color: rgb(40, 40, 40);
 		padding: 0.3em;
 	}
+
+	
 </style>

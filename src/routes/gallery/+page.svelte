@@ -16,7 +16,7 @@
 	<div class="player-card">
 		{#each players as player}
 			<a href="/gallery/{player.id}">
-				<Players {player} />
+			<div class="singleCard"><Players {player} /></div>
 			</a>
 		{/each}
 	</div>
@@ -43,4 +43,5 @@
 		font-size: clamp(1rem, 10vw, 2rem);
 		margin-bottom: 1em;
 	}
+ 
 </style>

@@ -24,7 +24,8 @@ nav {
   background-color: rgb(59, 61, 62);
 }
 nav a{
-  font-size: 2em;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  width: max-content;
   text-decoration: none;
   color: white;
   font-family: 'Bebas Neue', cursive;
@@ -42,3 +43,4 @@ footer p{
   font-size: 1.7em;
   color: white;
 }
+
