@@ -28,8 +28,11 @@
 </main> 
 
 <style>
+
+
   main{
     flex: auto;
+    background-color: rgb(250, 235, 215);
   }
   h1 {
 	font-size: clamp(1rem, 10vw, 3rem);

@@ -45,6 +45,7 @@
 }
 .text{
   width: 540px;
+  color: rgb(19, 18, 18);
 }
 .text h2{
   font-size: 90px;
@@ -57,9 +58,7 @@
   font-weight: 500;
   margin-bottom: 20px;
 }
-span{
-  color: #4070f4;
-}
+
 .text p{
   font-size: 18px;
   line-height: 25px;
