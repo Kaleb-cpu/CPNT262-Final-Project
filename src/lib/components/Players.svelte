@@ -4,10 +4,10 @@
 
 <main>
 	<div class="gallery">
-			<div class="player-card">
-				<div class="player-information">
+		<div class="player-card">
+			<div class="player-information">
 				<div class="player-name">
-					<img src="{player.imageThumbnail}" width="350" height="200" alt="player">
+					<img src={player.imageThumbnail} width="350" height="200" alt="player" />
 					<h2>{player.name}</h2>
 				</div>
 
@@ -24,37 +24,35 @@
 					<p>{player.shortDescription}</p>
 				</div>
 			</div>
-			</div>
-			</div>
-
+		</div>
+	</div>
 </main>
 
 <style>
-
-main{
-	flex: auto;
-}
-	.gallery{
+	main {
+		flex: auto;
+	}
+	.gallery {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		display: block;
 		margin-bottom: 1em;
 	}
-	img{
-		object-fit:cover;
+	img {
+		object-fit: cover;
 		width: 100%;
 		height: initial;
 		margin: auto;
 		display: block;
 	}
 
-	.player-information{
+	.player-information {
 		height: 100vh;
 	}
 	.player-card {
 		border: 5px solid rgb(4, 37, 50);
 		width: min-content;
-		
+
 		margin: auto;
 		padding: 0.5em;
 		border-radius: 5px;
@@ -64,7 +62,6 @@ main{
 		transition: background-color 2s ease-out;
 	}
 
-	
 	.player-card:hover {
 		background-color: rgb(127, 115, 99);
 		cursor: pointer;

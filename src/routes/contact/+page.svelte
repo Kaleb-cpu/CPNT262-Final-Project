@@ -1,9 +1,10 @@
-		<script lang="ts">
-			import FormField from '@smui/form-field';
-			import Switch from '@smui/switch';
-		
-			let agreed = false;
-		</script>
+<script lang="ts">
+	import FormField from '@smui/form-field';
+	import Switch from '@smui/switch';
+
+	let agreed = false;
+</script>
+
 <svelte:head>
 	<title>Contact</title>
 	<meta name="robots" content="noindex nofollow" />
@@ -11,8 +12,12 @@
 <main>
 	<h1 class="text-6xl font-bold leading-normal mt-0 mb-2 text-slate-600">Contact US</h1>
 	<div class="contact">
-		<h3 class="text-4xl font-semibold leading-normal mt-0 mb-2 text-slate-600">Online Customer Service</h3>
-		<p class="text-2xl font-normal leading-normal mt-0 mb-2 text-slate-600">Drop us a line through the form below, and we will get back to you ASAP</p>
+		<h3 class="text-4xl font-semibold leading-normal mt-0 mb-2 text-slate-600">
+			Online Customer Service
+		</h3>
+		<p class="text-2xl font-normal leading-normal mt-0 mb-2 text-slate-600">
+			Drop us a line through the form below, and we will get back to you ASAP
+		</p>
 		<form action="https://formspree.io/f/xqkodero" method="POST">
 			<label for="fullname">Full Name</label>
 			<input type="name" name="name" />
@@ -21,35 +26,29 @@
 			<input type="email" name="email" />
 
 			<label for="message">Message</label>
-			<input type="text" name="message"/>
+			<input type="text" name="message" />
 
-			<span class="termsInput"><input type="checkbox" name="terms" bind:checked={agreed}/></span>
-			
-				<div class="agreeTerms">
-	<FormField>
-  <Switch bind:checked={agreed} />
-  <span slot="label">
-    I agree to the terms and conditions of the software, <small
-      style="opacity: .4;"
-      >and hereby sign away my rights just to use this app.</small
-    >
-  </span>
-</FormField>
+			<span class="termsInput"><input type="checkbox" name="terms" bind:checked={agreed} /></span>
 
-<pre class="status">Agreed: {agreed ? 'Yes!' : 'Not yet.'}</pre>
+			<div class="agreeTerms">
+				<FormField>
+					<Switch bind:checked={agreed} />
+					<span slot="label">
+						I agree to the terms and conditions of the software, <small style="opacity: .4;"
+							>and hereby sign away my rights just to use this app.</small
+						>
+					</span>
+				</FormField>
 
-
-	</div>
+				<pre class="status">Agreed: {agreed ? 'Yes!' : 'Not yet.'}</pre>
+			</div>
 			<button type="submit">Send</button>
 		</form>
 	</div>
-
-
 </main>
 
 <style>
-
-	.termsInput{
+	.termsInput {
 		display: none;
 	}
 
@@ -92,8 +91,8 @@
 		padding-bottom: 0.5em;
 		padding-top: 0.3em;
 	}
-	
-	.agreeTerms{
+
+	.agreeTerms {
 		margin-top: 1.3em;
 	}
 	/* where people would write */
