@@ -1,5 +1,5 @@
 const player1 = {
-	id: 'messi',
+	id: '1',
 	name: 'MESSI',
 	age: 35,
 	country: 'Argentina',
@@ -17,7 +17,7 @@ const player1 = {
 };
 
 const player2 = {
-	id: 'neymar',
+	id: '2',
 	name: 'NEYMAR',
 	age: 31,
 	country: 'Brazil',
@@ -35,7 +35,7 @@ const player2 = {
 };
 
 const player3 = {
-	id: 'mbappe',
+	id: '3',
 	name: 'MBAPPE',
 	age: 24,
 	country: 'France',
@@ -54,7 +54,7 @@ const player3 = {
 };
 
 const player4 = {
-	id: 'ronaldo',
+	id: '4',
 	name: 'RONALDO',
 	age: 38,
 	country: 'Portuguese',
@@ -72,7 +72,7 @@ const player4 = {
 };
 
 const player5 = {
-	id: 'harry',
+	id: '5',
 	name: 'HARRY',
 	age: 29,
 	country: 'British',
@@ -90,7 +90,7 @@ const player5 = {
 };
 
 const player6 = {
-	id: 'modric',
+	id: '6',
 	name: 'MODRIC',
 	age: 37,
 	country: 'Croatian',
@@ -108,7 +108,7 @@ const player6 = {
 };
 
 const player7 = {
-	id: 'marcelo',
+	id: '7',
 	name: 'MARCELO',
 	age: 34,
 	country: 'Brazil',
@@ -126,7 +126,7 @@ const player7 = {
 };
 
 const player8 = {
-	id: 'ronaldhino',
+	id: '8',
 	name: 'RONALDHINO',
 	age: 43,
 	country: 'Brazil',
@@ -144,7 +144,7 @@ const player8 = {
 };
 
 const player9 = {
-	id: 'mane',
+	id: '9',
 	name: 'MANE',
 	age: 30,
 	country: 'Senegalese',
